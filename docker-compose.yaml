@@ -4,9 +4,9 @@ services:
         image: stylishsamuel/vprofiledb:V1
         ports:
          - "3306:3306"
-         volumes:
+        volumes:
             - vprodbdata:/var/lib/mysql
-         environment:
+        environment:
             -MYSQL_ROOT_PASSWORD=vprodbpass
 
     vprocache01:
@@ -17,7 +17,7 @@ services:
     vpromq01:
         image: rabbitmq
         ports:
-         - "15672:115672"
+         - "15672:15672"
         environment :
             - RABBITMQ_DEFAULT_USER=guest
             - RABBITMQ_DEFAULT_PASS=guest
