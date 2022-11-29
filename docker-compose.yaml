@@ -23,7 +23,7 @@ services:
             - RABBITMQ_DEFAULT_PASS=guest
 
     vproapp:
-        image: stylishsamuel/vprofileapp:V1
+        image: stylishsamuel/vprofilapp:V1
         ports:
          - "8080:8080"
         volumes:
